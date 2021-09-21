@@ -1,0 +1,38 @@
+# osx
+.DS_Store
+.DS_Store?  Icon?
+.Spotlight-V100
+.Trashes
+
+# application
+node_modules/
+*.swp
+.idea/
+.idea
+.sass-cache/
+
+# packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# intellij
+*.iml
+
+# java
+.gradle
+gradlew.bat
+
+# yarn
+yarn-error.log
+
+# vim
+~
+
+# docker
+.env
