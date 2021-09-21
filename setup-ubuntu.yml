@@ -1,0 +1,147 @@
+- hosts: all
+
+  tasks:
+
+    - name: Caps to Ctrl
+      shell: gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
+
+    - name: Put in your most commonly used items
+      become: yes
+      apt:
+        name: "{{ packages }}"
+        state: present
+        update_cache: yes
+      vars:
+        packages:
+          - git
+          - curl
+          - xsel
+          - tig
+          - vim
+          - sshpass
+          - neovim
+          - remmina
+          - filezilla
+          - zsh
+          - ssh
+          - nodejs
+          - npm
+          - python
+          - python3
+          - python3-pip
+          - gnome-tweak-tool
+          - gnome-shell-extensions
+          - materia-gtk-theme
+          - papirus-icon-theme
+          - tree
+          - ansible
+          - mysql-client
+          - postgresql
+          - redis-tools
+          - nfs-common
+          - colordiff
+          - golang-go
+          - php
+          - virtualbox
+          - vagrant
+          - vlc
+          - simplescreenrecorder
+          - android-tools-adb
+          - jq
+          - tmux
+          - imagemagick
+          - fontforge
+          - trash-cli
+
+    - name: font install
+      become: yes
+      apt:
+        name: "{{ packages }}"
+        state: present
+        update_cache: yes
+      vars: 
+        packages:
+          - fonts-roboto
+          - fonts-noto
+          - fonts-ricty-diminished
+
+    - name: setting terminal font
+      shell: |
+        PROFILE_ID=$(gsettings get org.gnome.Terminal.ProfilesList list | sed "s/'/\"/g" | jq ".[0]" | sed "s/\"//g")
+        gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$PROFILE_ID/ font "Ricty Diminished Discord 13"
+
+    - name: vpn packages
+      become: yes
+      apt:
+        name: "{{ packages }}"
+        state: present
+        update_cache: yes
+      vars: 
+        packages:
+          - strongswan
+          - network-manager-strongswan
+          - libcharon-extra-plugins
+    
+    - name: pip language server install
+      shell: pip3 install python-language-server
+
+    - name: folder english
+      shell: LANG=C xdg-user-dirs-update --force 
+
+    - name: Put in your most commonly used items
+      become: yes
+      snap:
+        name: "{{ packages }}"
+        classic: yes
+      vars:
+        packages:
+          - intellij-idea-community
+          - zoom-client
+          - barrier
+          # - code (NG)
+          # - slack (NG)
+
+    - name: get git-secret sources.list
+      become: yes
+      shell: echo "deb https://dl.bintray.com/sobolevn/deb git-secret main" | tee -a /etc/apt/sources.list
+
+    - name: git-secret add-key
+      become: yes
+      shell: wget -qO - https://api.bintray.com/users/sobolevn/keys/gpg/public.key | apt-key add -
+
+    - name: git-secret install
+      become: yes
+      apt:
+        name: "{{ packages }}"
+        state: present
+        update_cache: yes
+      vars: 
+        packages:
+          - git-secret
+
+    ##### - name: npm install
+    #####   become: yes
+    #####   npm:
+    #####     name: "{{ packages }}"
+    #####     state: present
+    #####     global: yes
+    #####   vars: 
+    #####     packages:
+    #####       - n
+    #####       - typescript
+    #####       - typescript-language-server
+    #####       - intelephense
+    #####       - vscode-css-languageserver-bin
+    #####       - prettier
+
+    ##### sudo n stable
+    ##### sudo apt purge -y nodejs npm
+
+    ##### - name: rust install
+    #####   shell: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ##### - name: rust install2
+    #####   shell: rustup install nightly && cargo +nightly install racer
+
+    ##### - name: rust install3
+    #####   shell: rustup component add rls rust-analysis rust-src
+
