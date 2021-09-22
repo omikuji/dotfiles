@@ -1,5 +1,3 @@
-sudo apt -y install tmux tig neovim tree colordiff jq
-
 mkdir -p $HOME/.config/nvim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/Vundle.vim
 
