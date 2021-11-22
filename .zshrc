@@ -173,3 +173,9 @@ if [[ $(uname) =~ ^Darwin* ]]; then
   # mysql
   export PATH=/opt/homebrew/opt/mysql-client/bin:$PATH
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kenta/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kenta/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kenta/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kenta/google-cloud-sdk/completion.zsh.inc'; fi
