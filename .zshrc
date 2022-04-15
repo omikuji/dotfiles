@@ -65,7 +65,6 @@ unsetopt AUTO_REMOVE_SLASH
 setopt AUTO_LIST
 setopt AUTO_PARAM_KEYS
 setopt PROMPT_SUBST
-
 setopt AUTO_RESUME
 setopt rm_star_silent
 setopt MARK_DIRS
@@ -76,7 +75,6 @@ setopt LIST_TYPES
 setopt NO_BEEP
 setopt ALWAYS_LAST_PROMPT
 setopt CDABLE_VARS
-setopt SH_WORD_SPLIT
 setopt ALL_EXPORT
 setopt AUTO_PARAM_SLASH
 setopt AUTO_PUSHD
