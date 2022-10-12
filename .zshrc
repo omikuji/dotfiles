@@ -52,6 +52,8 @@ bindkey "^N" history-beginning-search-forward-end
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^S' history-incremental-pattern-search-forward
 
+bindkey -v
+
 PROMPT="[%n@%m %~]%(!.#.$) "
 
 LISTMAX=1000
@@ -173,7 +175,7 @@ if [[ $(uname) =~ ^Darwin* ]]; then
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/kenta/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kenta/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/omikuji/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/omikuji/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/kenta/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kenta/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/omikuji/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/omikuji/google-cloud-sdk/completion.zsh.inc'; fi

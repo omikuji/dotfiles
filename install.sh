@@ -11,3 +11,5 @@ ln -fnsv $HOME/dotfiles/.profile $HOME/.profile
 ln -fnsv $HOME/dotfiles/.zshenv $HOME/.zshenv
 
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
+
+brew install trash-cli
