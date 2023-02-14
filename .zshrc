@@ -141,6 +141,7 @@ if [[ $(uname) =~ ^Darwin* ]]; then
   # for mac
   alias ls='ls -G'
   alias firefox='open -a /Applications/Firefox.app'
+  alias chrome='open -a "Google Chrome"'
 else
   # for linux
   alias ls='ls --color'
