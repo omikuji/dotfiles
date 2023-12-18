@@ -161,6 +161,8 @@ then
   alias vi='nvim'
 fi
 
+alias ai='open https://chat.openai.com/'
+
 export SDKMAN_DIR="$HOME/.sdkman"
 export PATH="$HOME/bin:$PATH"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
