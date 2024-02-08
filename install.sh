@@ -9,6 +9,7 @@ ln -fnsv $HOME/dotfiles/.zshrc $HOME/.zshrc
 ln -fnsv $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
 ln -fnsv $HOME/dotfiles/.profile $HOME/.profile
 ln -fnsv $HOME/dotfiles/.zshenv $HOME/.zshenv
+ln -fnsv $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 
