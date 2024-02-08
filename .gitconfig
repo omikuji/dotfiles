@@ -1,0 +1,21 @@
+[core]
+	excludesfile = /Users/omikuji/dotfiles/.gitignore_global
+[user]
+	email = omikujiman@gmail.com
+	name = omikuji
+	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCodcYbp7HXEtqn//hkjVclw8gntw9EGR0EZ/AVK0SBmQ9kkoBT+AsdQNp7kTxhz6YVVMGeMB0/BJ5IHIKzVtkLTjM2vs7xk8hXKnqhkJL3CWIyDxGCS3KKLbSNlrJiqj5fUfgzBUZXlnWRHd3/yndYR3qhJgSubSizTiSVDGrUb6NfwEa0ILihCBsxFIsvdwszAbzTIcCRZTRcVW0BVixV2DBESTRc1M4zP3x97m9oq+oV+H8MPpzIu2deOf23p+TR4A6gj7B77z7OqveTFDfLvzUCuM7+dmWV8/HvLm5TfAk09i5kHNGzxcQWKkpf3LxT4aQVY5lSo86BlBIzlhrI+rSCSMB/ru9l2fxTTiofGaWHO6NpFJlTXX2AMuXTIuoScEaHr66bHMwq2mPjVC8Y31nyLx6HbShM6shYowBRar70YyDVE6aRm25AB4zKPcDNgYzdpbTf81WjOf+OuwqbW3yqLR/OYpNJxo3yuAX2hZnEKIMgPAysGXbZI5RN/bPAfXfXxjdcXaFS6si4fMmId+CBs2p0fqrsY8Tb1JCQA1M2F2DUBQ5mPmn9fp2HmLW8McVcqz+MqWlhMEOh5RANryo+PnwwXDPLqVKujFhuAM94TDdJH4Zo9QHTvQ+ByN7hslGd+ykd7Xojavd6QTL+crZxgvY5/HHZp01ICDiYtQ== omikujiman@gmail.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
