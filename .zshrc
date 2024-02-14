@@ -182,3 +182,7 @@ if [ -f '/Users/omikuji/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/omikuji
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/omikuji/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/omikuji/google-cloud-sdk/completion.zsh.inc'; fi
+
+# ssh-add
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/omikuji_rsa
