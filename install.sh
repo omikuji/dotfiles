@@ -13,4 +13,4 @@ ln -fnsv $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 
-brew install trash-cli
+# brew install trash-cli
