@@ -1,0 +1,2 @@
+0 11 * * * sh /Users/omikuji/dev/omikuji/nukamiso/empty_trash.sh
+0 10 * * * sh /Users/omikuji/dev/omikuji/nukamiso/delete_files.sh --directory $HOME/Desktop --target 'スクリーンショット' --days 3
