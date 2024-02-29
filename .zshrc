@@ -177,12 +177,12 @@ if [[ $(uname) =~ ^Darwin* ]]; then
   export PATH=/opt/homebrew/opt/mysql-client/bin:$PATH
 fi
 
+# ssh-add
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/omikuji_rsa
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/omikuji/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/omikuji/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/omikuji/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/omikuji/google-cloud-sdk/completion.zsh.inc'; fi
-
-# ssh-add
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/omikuji_rsa
