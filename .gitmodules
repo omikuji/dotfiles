@@ -1,0 +1,3 @@
+[submodule "alacritty/Monokai-Charcoal-Theme-for-Alacritty"]
+	path = alacritty/Monokai-Charcoal-Theme-for-Alacritty
+	url = git@github.com:omikuji/Monokai-Charcoal-Theme-for-Alacritty.git
