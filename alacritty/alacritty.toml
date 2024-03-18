@@ -1,0 +1,46 @@
+live_config_reload = true
+import = ["~/dotfiles/alacritty/Monokai-Charcoal-Theme-for-Alacritty/monokai_charcoal_white.toml"]
+
+[window]
+dynamic_title = true
+opacity = 1
+
+[window.dimensions]
+columns = 150
+lines = 40
+
+[window.padding]
+x = 5
+y = 0
+
+[cursor]
+blink_interval = 400
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "Always"
+shape = "Block"
+
+[scrolling]
+history = 10000
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 15
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.normal]
+family = "Ricty Diminished Discord"
+
+[font.offset]
+x = 0
+y = 0
+
+[shell]
+program = "/bin/zsh"
+args = ["-l", "-c", "/opt/homebrew/bin/tmux a -t 0 || /opt/homebrew/bin/tmux -u"]
