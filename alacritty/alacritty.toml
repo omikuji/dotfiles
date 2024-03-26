@@ -1,13 +1,13 @@
 live_config_reload = true
-import = ["~/dotfiles/alacritty/Monokai-Charcoal-Theme-for-Alacritty/monokai_charcoal_white.toml"]
+import = ["~/dotfiles/alacritty/monokai_charcoal_white_omikuji_custom.toml"]
 
 [window]
 dynamic_title = true
 opacity = 1
 
 [window.dimensions]
-columns = 150
-lines = 40
+columns = 235
+lines = 60
 
 [window.padding]
 x = 5
