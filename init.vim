@@ -28,6 +28,7 @@ Plugin 'prabirshrestha/vim-lsp'
 Plugin 'prabirshrestha/asyncomplete.vim'
 Plugin 'prabirshrestha/asyncomplete-lsp.vim'
 Plugin 'prettier/vim-prettier'
+Plugin 'github/copilot.vim'
 
 call vundle#end() 
 
