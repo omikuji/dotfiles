@@ -21,7 +21,7 @@ unsetopt HIST_VERIFY
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000 
 SAVEHIST=1000000
-PATH=${PATH}:~/bin
+PATH=${PATH}:~/bin:~/dev/omikuji/workspace/bin
 HISTTIMEFORMAT="[%Y/%M/%D %H:%M:%S] "
 
 autoload -U compinit promptinit
