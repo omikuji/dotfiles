@@ -19,8 +19,8 @@ setopt SHARE_HISTORY
 unsetopt HIST_VERIFY          
 
 HISTFILE=$HOME/.zsh_history
-HISTSIZE=10000 
-SAVEHIST=1000000
+HISTSIZE=1000000
+SAVEHIST=100000000
 PATH=${PATH}:~/bin:~/dev/omikuji/workspace/bin
 HISTTIMEFORMAT="[%Y/%M/%D %H:%M:%S] "
 
