@@ -1,0 +1,38 @@
+{
+  "title": "Media controls with Shift instead of Option",
+  "rules": [
+    {
+      "description": "Cmd+Shift+; → Play/Pause, Cmd+Shift+' → Next Track",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": ["command", "shift"]
+            }
+          },
+          "to": [
+            {
+              "consumer_key_code": "play_or_pause"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": ["command", "shift"]
+            }
+          },
+          "to": [
+            {
+              "consumer_key_code": "fastforward"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

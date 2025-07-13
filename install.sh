@@ -11,6 +11,7 @@ ln -fnsv $HOME/dotfiles/.profile $HOME/.profile
 ln -fnsv $HOME/dotfiles/.zshenv $HOME/.zshenv
 ln -fnsv $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 ln -fnsv $HOME/dotfiles/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+ln -fnsv $HOME/dotfiles/hhkb_media_controls.json $HOME/.config/karabiner/assets/complex_modifications/hhkb_media_controls.json
 
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 
