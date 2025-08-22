@@ -2,12 +2,12 @@
   "title": "Media controls with Shift instead of Option",
   "rules": [
     {
-      "description": "Cmd+Shift+; → Play/Pause, Cmd+Shift+' → Next Track",
+      "description": "Cmd+Shift+← → Play/Pause, Cmd+Shift+→ → Next Track, Cmd+Shift+↑/↓ → Volume Up/Down",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "semicolon",
+            "key_code": "left_arrow",
             "modifiers": {
               "mandatory": ["command", "shift"]
             }
@@ -21,7 +21,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "quote",
+            "key_code": "right_arrow",
             "modifiers": {
               "mandatory": ["command", "shift"]
             }
@@ -29,6 +29,34 @@
           "to": [
             {
               "consumer_key_code": "fastforward"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": ["command", "shift"]
+            }
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_increment"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": ["command", "shift"]
+            }
+          },
+          "to": [
+            {
+              "consumer_key_code": "volume_decrement"
             }
           ]
         }
