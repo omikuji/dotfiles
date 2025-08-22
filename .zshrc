@@ -173,14 +173,13 @@ fi
 
 # ssh-add
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/omikuji_rsa
 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/omikuji/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/omikuji/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/omikuji/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/omikuji/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 bindkey "^P" history-beginning-search-backward-end
