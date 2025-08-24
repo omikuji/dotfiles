@@ -191,6 +191,6 @@ bindkey '^S' history-incremental-pattern-search-forward
 export GIT_PAGER=cat
 
 # Load local settings if they exist
-if [ -f "$HOME/.zshrc.local" ]; then
-  . "$HOME/.zshrc.local"
+if [ -f "$HOME/dotfiles/.zshrc.local" ]; then
+  . "$HOME/dotfiles/.zshrc.local"
 fi
