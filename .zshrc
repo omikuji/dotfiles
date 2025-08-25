@@ -155,8 +155,6 @@ then
   alias vi='nvim'
 fi
 
-alias ai='open https://chat.openai.com/'
-
 export SDKMAN_DIR="$HOME/.sdkman"
 export PATH="$HOME/bin:$PATH"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -173,7 +171,6 @@ fi
 
 # ssh-add
 eval "$(ssh-agent -s)"
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
