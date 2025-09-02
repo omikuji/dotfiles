@@ -13,6 +13,9 @@ ln -fnsv $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 ln -fnsv $HOME/dotfiles/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
 ln -fnsv $HOME/dotfiles/hhkb_media_controls.json $HOME/.config/karabiner/assets/complex_modifications/hhkb_media_controls.json
 
+mkdir -p $HOME/.gemini
+ln -fnsv $HOME/dotfiles/gemini/GEMINI.md $HOME/.gemini/GEMINI.md
+
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 
 # brew install trash-cli
