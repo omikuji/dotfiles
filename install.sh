@@ -15,6 +15,7 @@ ln -fnsv $HOME/dotfiles/hhkb_media_controls.json $HOME/.config/karabiner/assets/
 
 mkdir -p $HOME/.gemini
 ln -fnsv $HOME/dotfiles/gemini/GEMINI.md $HOME/.gemini/GEMINI.md
+ln -fnsv $HOME/dotfiles/gemini/settings.json $HOME/.gemini/settings.json
 
 git config --global core.excludesfile $HOME/dotfiles/.gitignore_global
 

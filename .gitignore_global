@@ -28,3 +28,4 @@ yarn-error.log
 # Local settings
 .zshrc.local
 .gitconfig.local
+GEMINI.local.md
